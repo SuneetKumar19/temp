@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<title>Base template</title>
+</head>
+
+ <body>
+
+
+ <nav class="nav">
+
+    <div class="container">
+    <ul class="nav">
+    <li class="nav-item"><a href="{%url 'index'%}" class="navbar-link">BRAND</a></li>
+    <li class="nav-item"><a href="{%url 'admin:index'%}" class="navbar-link">ADMIN</a></li>
+     <li class="nav-item"><a href="{%url 'basic_app:other'%}" class="navbar-link">OTHER</a></li>
+    </ul>
+
+    </div>
+
+ </nav>
+
+
+ <div class="container">
+
+ {%block body_block %}
+
+
+ {%endblock%}
+ </div>
+ 
+ </body>
+</html>
